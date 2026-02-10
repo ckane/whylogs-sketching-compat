@@ -123,16 +123,16 @@ vector_of_kll_sketches<T,C,S>::vector_of_kll_sketches(vector_of_kll_sketches&& o
 template<typename T, typename C, typename S>
 vector_of_kll_sketches<T,C,S>& vector_of_kll_sketches<T,C,S>::operator=(const vector_of_kll_sketches& other) {
   vector_of_kll_sketches<T,C,S> copy(other);
-  k_ = copy.k_;
-  d_ = copy.d_;
+  k_ = copy.get_k();
+  d_ = copy.get_d();
   std::swap(sketches_, copy.sketches_);
   return *this;
 }
 
 template<typename T, typename C, typename S>
 vector_of_kll_sketches<T,C,S>& vector_of_kll_sketches<T,C,S>::operator=(vector_of_kll_sketches&& other) {
-  k_ = other.k_;
-  d_ = other.d_;
+  k_ = other.get_k();
+  d_ = other.get_d();
   std::swap(sketches_, other.sketches_);
   return *this;
 }
