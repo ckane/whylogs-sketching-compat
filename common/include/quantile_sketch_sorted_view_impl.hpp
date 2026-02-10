@@ -21,6 +21,7 @@
 #define QUANTILE_SKETCH_SORTED_VIEW_IMPL_HPP_
 
 #include <algorithm>
+#include <cstdint>
 #include <stdexcept>
 
 namespace datasketches {

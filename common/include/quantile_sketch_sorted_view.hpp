@@ -20,6 +20,7 @@
 #ifndef QUANTILE_SKETCH_SORTED_VIEW_HPP_
 #define QUANTILE_SKETCH_SORTED_VIEW_HPP_
 
+#include <cstdint>
 #include <functional>
 
 namespace datasketches {

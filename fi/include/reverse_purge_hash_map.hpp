@@ -20,6 +20,7 @@
 #ifndef REVERSE_PURGE_HASH_MAP_HPP_
 #define REVERSE_PURGE_HASH_MAP_HPP_
 
+#include <cstdint>
 #include <memory>
 #include <iterator>
 
